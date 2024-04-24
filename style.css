@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: Quran426;
-  src: url("fonts/quran_p426.ttf");
+  src: url("./fonts/quran_p426.ttf");
 }
 
 @font-face {
   font-family: QuranC;
-  src: url("fonts/QCF_BSML.ttf");
+  src: url("./fonts/QCF_BSML.ttf");
 }
 
 * {
