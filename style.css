@@ -65,6 +65,10 @@ body {
 }
 
 .hero > h3 {
+  position: absolute;
+
+  bottom: 0.5em;
+
   color: #a79277;
   font-family: QuranC, serif;
   font-weight: 400;
