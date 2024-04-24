@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: Quran426;
+  src: url("fonts/quran_p426.ttf");
+}
+
+@font-face {
+  font-family: QuranC;
+  src: url("fonts/QCF_BSML.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,22 +51,24 @@ body {
 
 .hero .ayah > h1 {
   color: #7f7361;
-  font-family: Arial, sans-serif;
+  font-family: Quran426, serif;
+  font-weight: 400;
   font-size: 2.3em;
   text-align: center;
 }
 
 .hero .ayah > span {
   color: #a79277;
-  font-family: Arial, sans-serif;
+  font-family: QuranC, serif;
   font-size: 2.5em;
   text-align: center;
 }
 
 .hero > h3 {
   color: #a79277;
-  font-family: Arial, sans-serif;
-  font-size: 1.5em;
+  font-family: QuranC, serif;
+  font-weight: 400;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -66,7 +80,7 @@ body {
   }
 
   .hero > h3 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -78,6 +92,6 @@ body {
   }
 
   .hero > h3 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
