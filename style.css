@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ead8c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-inline: 1.5em;
+
+  gap: 1em;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .ayah {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5em;
+}
+
+.hero .ayah > h1 {
+  color: #7f7361;
+  font-family: Arial, sans-serif;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.hero .ayah > span {
+  color: #a79277;
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.hero > h3 {
+  color: #a79277;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Adjust font size for smaller screens */
+@media only screen and (max-width: 600px) {
+  .hero .ayah > h1,
+  .hero .ayah > span {
+    font-size: 1.5em;
+  }
+
+  .hero > h3 {
+    font-size: 1em;
+  }
+}
+
+/* Adjust font size for even smaller screens */
+@media only screen and (max-width: 400px) {
+  .hero .ayah > h1,
+  .hero .ayah > span {
+    font-size: 1.5em;
+  }
+
+  .hero > h3 {
+    font-size: 1em;
+  }
+}
