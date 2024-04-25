@@ -27,13 +27,12 @@ body {
 
 .hero {
   width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
 
   padding-inline: 1.5em;
-
-  gap: 1em;
 
   justify-content: center;
   align-items: center;
@@ -45,8 +44,6 @@ body {
 
   justify-content: center;
   align-items: center;
-
-  gap: 0.5em;
 }
 
 .hero .ayah > h1 {
@@ -66,8 +63,7 @@ body {
 
 .hero > h3 {
   position: absolute;
-
-  bottom: 0.5em;
+  bottom: 7em;
 
   color: #a79277;
   font-family: QuranC, serif;
