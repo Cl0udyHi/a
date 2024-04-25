@@ -36,6 +36,7 @@ body {
 
   justify-content: center;
   align-items: center;
+  gap: 0.5em;
 }
 
 .hero .ayah {
@@ -54,17 +55,25 @@ body {
   text-align: center;
 }
 
+.hero .ayah > h1::before {
+  content: "ﭿ";
+  font-family: QuranC, serif;
+}
+
+.hero .ayah > h1::after {
+  content: "ﭾ";
+  font-family: QuranC, serif;
+}
+
 .hero .ayah > span {
   color: #a79277;
   font-family: QuranC, serif;
   font-size: 2.5em;
+
   text-align: center;
 }
 
 .hero > h3 {
-  position: absolute;
-  bottom: 7em;
-
   color: #a79277;
   font-family: QuranC, serif;
   font-weight: 400;
