@@ -103,12 +103,4 @@ body {
   .hero > h3 {
     font-size: 1.2em;
   }
-
-  .hero .ayah > h1::before {
-    content: "";
-  }
-
-  .hero .ayah > h1::after {
-    content: "";
-  }
 }
