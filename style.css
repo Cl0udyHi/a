@@ -39,7 +39,7 @@ body {
   gap: 0.5em;
 }
 
-.hero > h1 {
+.hero h1 {
   color: #7f7361;
   font-family: Quran426, serif;
   font-weight: 400;
@@ -47,17 +47,17 @@ body {
   text-align: center;
 }
 
-.hero > h1::before {
+.hero h1::before {
   content: "ﭿ";
   font-family: QuranC, serif;
 }
 
-.hero > h1::after {
+.hero h1::after {
   content: "ﭾ";
   font-family: QuranC, serif;
 }
 
-.hero > h3 {
+.hero h3 {
   color: #a79277;
   font-family: QuranC, serif;
   font-weight: 400;
@@ -67,22 +67,22 @@ body {
 
 /* Adjust font size for smaller screens */
 @media only screen and (max-width: 600px) {
-  .hero > h1 {
+  .hero h1 {
     font-size: 1.5em;
   }
 
-  .hero > h3 {
+  .hero h3 {
     font-size: 1.2em;
   }
 }
 
 /* Adjust font size for even smaller screens */
 @media only screen and (max-width: 400px) {
-  .hero > h1 {
+  .hero h1 {
     font-size: 1.5em;
   }
 
-  .hero > h3 {
+  .hero h3 {
     font-size: 1.2em;
   }
 }
