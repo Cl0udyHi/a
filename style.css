@@ -50,14 +50,14 @@ body {
 .hero h1::before {
   content: "ﭿ";
   
-  color: #a79277;
+  color: #a79277 !important;
   font-family: QuranC, serif;
 }
 
 .hero h1::after {
   content: "ﭾ";
   
-  color: #a79277;
+  color: #a79277 !important;
   font-family: QuranC, serif;
 }
 
