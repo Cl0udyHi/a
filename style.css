@@ -39,15 +39,7 @@ body {
   gap: 0.5em;
 }
 
-.hero .ayah {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.hero .ayah > h1 {
+.hero > h1 {
   color: #7f7361;
   font-family: Quran426, serif;
   font-weight: 400;
@@ -55,22 +47,14 @@ body {
   text-align: center;
 }
 
-.hero .ayah > h1::before {
+.hero > h1::before {
   content: "ﭿ";
   font-family: QuranC, serif;
 }
 
-.hero .ayah > h1::after {
+.hero > h1::after {
   content: "ﭾ";
   font-family: QuranC, serif;
-}
-
-.hero .ayah > span {
-  color: #a79277;
-  font-family: QuranC, serif;
-  font-size: 2.5em;
-
-  text-align: center;
 }
 
 .hero > h3 {
@@ -83,8 +67,7 @@ body {
 
 /* Adjust font size for smaller screens */
 @media only screen and (max-width: 600px) {
-  .hero .ayah > h1,
-  .hero .ayah > span {
+  .hero > h1 {
     font-size: 1.5em;
   }
 
@@ -95,8 +78,7 @@ body {
 
 /* Adjust font size for even smaller screens */
 @media only screen and (max-width: 400px) {
-  .hero .ayah > h1,
-  .hero .ayah > span {
+  .hero > h1 {
     font-size: 1.5em;
   }
 
