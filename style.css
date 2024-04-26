@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: Quran426;
-  src: url("fonts/quran_p426.ttf");
+  src: url("assets/fonts/quran_p426.ttf");
 }
 
 @font-face {
   font-family: QuranC;
-  src: url("fonts/QCF_BSML.ttf");
+  src: url("assets/fonts/QCF_BSML.ttf");
 }
 
 * {
@@ -39,7 +39,7 @@ body {
   gap: 0.5em;
 }
 
-.hero h1 {
+.hero > h1 {
   color: #7f7361;
   font-family: Quran426, serif;
   font-weight: 400;
@@ -47,21 +47,17 @@ body {
   text-align: center;
 }
 
-.hero h1::before {
+.hero > h1::before {
   content: "ﭿ";
-  
-  color: #a79277 !important;
   font-family: QuranC, serif;
 }
 
-.hero h1::after {
+.hero > h1::after {
   content: "ﭾ";
-  
-  color: #a79277 !important;
   font-family: QuranC, serif;
 }
 
-.hero h3 {
+.hero > h3 {
   color: #a79277;
   font-family: QuranC, serif;
   font-weight: 400;
@@ -71,22 +67,24 @@ body {
 
 /* Adjust font size for smaller screens */
 @media only screen and (max-width: 600px) {
-  .hero h1 {
+  .hero > h1,
+  .hero > span {
     font-size: 1.5em;
   }
 
-  .hero h3 {
+  .hero > h3 {
     font-size: 1.2em;
   }
 }
 
 /* Adjust font size for even smaller screens */
 @media only screen and (max-width: 400px) {
-  .hero h1 {
+  .hero > h1,
+  .hero > span {
     font-size: 1.5em;
   }
 
-  .hero h3 {
+  .hero > h3 {
     font-size: 1.2em;
   }
 }
