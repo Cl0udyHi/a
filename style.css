@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
   font-family: Quran426;
@@ -23,6 +24,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero {
@@ -30,6 +35,8 @@ body {
   height: 100%;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 
   padding-inline: 1.5em;
@@ -37,24 +44,44 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+
+  overflow: hidden;
 }
 
-.hero > h1 {
-  color: #7f7361;
-  font-family: Quran426, serif;
-  font-weight: 400;
-  font-size: 2.3em;
-  text-align: center;
+.spin-content {
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  left: 0;
+  top: 0;
+
+  overflow: hidden;
 }
 
-.hero > h1::before {
-  content: "ﭿ";
-  font-family: QuranC, serif;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
-.hero > h1::after {
-  content: "ﭾ";
-  font-family: QuranC, serif;
+.spin-content > svg.pattern {
+  fill: #dac9b4;
+  opacity: 0.5;
+
+  flex-shrink: 0;
+
+  animation: spin 30s linear infinite;
 }
 
 .hero > h3 {
@@ -65,26 +92,57 @@ body {
   text-align: center;
 }
 
-/* Adjust font size for smaller screens */
-@media only screen and (max-width: 600px) {
-  .hero > h1,
-  .hero > span {
-    font-size: 1.5em;
-  }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .hero > h3 {
-    font-size: 1.2em;
-  }
+  flex-direction: column;
+
+  gap: 1em;
+}
+
+.content > h1 {
+  color: #64553e;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.ayah p {
+  font-family: Quran426, serif;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: center;
+
+  color: #81715c;
+}
+
+.ayah p::before {
+  content: "ﭿ";
+  font-family: QuranC, serif;
+}
+
+.ayah p::after {
+  content: "ﭾ";
+  font-family: QuranC, serif;
+}
+
+.ayah > h3 {
+  color: #81715c;
+  font-family: QuranC, serif;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: center;
 }
 
 /* Adjust font size for even smaller screens */
 @media only screen and (max-width: 400px) {
-  .hero > h1,
-  .hero > span {
-    font-size: 1.5em;
+  .ayah p,
+  .ayah > h3 {
+    font-size: 1.5em !important;
   }
 
-  .hero > h3 {
-    font-size: 1.2em;
+  .content > h1 {
+    font-size: 2em !important;
   }
 }
